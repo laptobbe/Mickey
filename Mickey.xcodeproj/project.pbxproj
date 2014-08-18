@@ -13,6 +13,12 @@
 		F670180419A29003000F5450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F670180219A29003000F5450 /* Main.storyboard */; };
 		F670180619A29003000F5450 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F670180519A29003000F5450 /* Images.xcassets */; };
 		F670181219A29003000F5450 /* MickeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F670181119A29003000F5450 /* MickeyTests.swift */; };
+		F670182419A2902E000F5450 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F670182319A2902E000F5450 /* main.swift */; };
+		F670182619A2902E000F5450 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F670182519A2902E000F5450 /* ViewController.swift */; };
+		F670182819A2902E000F5450 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F670182719A2902E000F5450 /* AppDelegate.swift */; };
+		F670182A19A2902E000F5450 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F670182919A2902E000F5450 /* Images.xcassets */; };
+		F670182D19A2902E000F5450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F670182B19A2902E000F5450 /* Main.storyboard */; };
+		F670183919A2902E000F5450 /* Mickey_for_MacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F670183819A2902E000F5450 /* Mickey_for_MacTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +28,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = F67017F619A29003000F5450;
 			remoteInfo = Mickey;
+		};
+		F670183319A2902E000F5450 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F67017EF19A29003000F5450 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F670181E19A2902E000F5450;
+			remoteInfo = "Mickey for Mac";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +49,16 @@
 		F670180B19A29003000F5450 /* MickeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MickeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F670181019A29003000F5450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F670181119A29003000F5450 /* MickeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MickeyTests.swift; sourceTree = "<group>"; };
+		F670181F19A2902E000F5450 /* Mickey for Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mickey for Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F670182219A2902E000F5450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F670182319A2902E000F5450 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F670182519A2902E000F5450 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F670182719A2902E000F5450 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F670182919A2902E000F5450 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F670182C19A2902E000F5450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F670183219A2902E000F5450 /* Mickey for MacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mickey for MacTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F670183719A2902E000F5450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F670183819A2902E000F5450 /* Mickey_for_MacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mickey_for_MacTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +76,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F670181C19A2902E000F5450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F670182F19A2902E000F5450 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +98,8 @@
 			children = (
 				F67017F919A29003000F5450 /* Mickey */,
 				F670180E19A29003000F5450 /* MickeyTests */,
+				F670182019A2902E000F5450 /* Mickey for Mac */,
+				F670183519A2902E000F5450 /* Mickey for MacTests */,
 				F67017F819A29003000F5450 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +109,8 @@
 			children = (
 				F67017F719A29003000F5450 /* Mickey.app */,
 				F670180B19A29003000F5450 /* MickeyTests.xctest */,
+				F670181F19A2902E000F5450 /* Mickey for Mac.app */,
+				F670183219A2902E000F5450 /* Mickey for MacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +153,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F670182019A2902E000F5450 /* Mickey for Mac */ = {
+			isa = PBXGroup;
+			children = (
+				F670182519A2902E000F5450 /* ViewController.swift */,
+				F670182719A2902E000F5450 /* AppDelegate.swift */,
+				F670182919A2902E000F5450 /* Images.xcassets */,
+				F670182B19A2902E000F5450 /* Main.storyboard */,
+				F670182119A2902E000F5450 /* Supporting Files */,
+			);
+			path = "Mickey for Mac";
+			sourceTree = "<group>";
+		};
+		F670182119A2902E000F5450 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F670182219A2902E000F5450 /* Info.plist */,
+				F670182319A2902E000F5450 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F670183519A2902E000F5450 /* Mickey for MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				F670183819A2902E000F5450 /* Mickey_for_MacTests.swift */,
+				F670183619A2902E000F5450 /* Supporting Files */,
+			);
+			path = "Mickey for MacTests";
+			sourceTree = "<group>";
+		};
+		F670183619A2902E000F5450 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F670183719A2902E000F5450 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +229,41 @@
 			productReference = F670180B19A29003000F5450 /* MickeyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F670181E19A2902E000F5450 /* Mickey for Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F670183A19A2902E000F5450 /* Build configuration list for PBXNativeTarget "Mickey for Mac" */;
+			buildPhases = (
+				F670181B19A2902E000F5450 /* Sources */,
+				F670181C19A2902E000F5450 /* Frameworks */,
+				F670181D19A2902E000F5450 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mickey for Mac";
+			productName = "Mickey for Mac";
+			productReference = F670181F19A2902E000F5450 /* Mickey for Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F670183119A2902E000F5450 /* Mickey for MacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F670183D19A2902E000F5450 /* Build configuration list for PBXNativeTarget "Mickey for MacTests" */;
+			buildPhases = (
+				F670182E19A2902E000F5450 /* Sources */,
+				F670182F19A2902E000F5450 /* Frameworks */,
+				F670183019A2902E000F5450 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F670183419A2902E000F5450 /* PBXTargetDependency */,
+			);
+			name = "Mickey for MacTests";
+			productName = "Mickey for MacTests";
+			productReference = F670183219A2902E000F5450 /* Mickey for MacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +279,13 @@
 					F670180A19A29003000F5450 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = F67017F619A29003000F5450;
+					};
+					F670181E19A2902E000F5450 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F670183119A2902E000F5450 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F670181E19A2902E000F5450;
 					};
 				};
 			};
@@ -183,6 +304,8 @@
 			targets = (
 				F67017F619A29003000F5450 /* Mickey */,
 				F670180A19A29003000F5450 /* MickeyTests */,
+				F670181E19A2902E000F5450 /* Mickey for Mac */,
+				F670183119A2902E000F5450 /* Mickey for MacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -198,6 +321,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F670180919A29003000F5450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F670181D19A2902E000F5450 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F670182A19A2902E000F5450 /* Images.xcassets in Resources */,
+				F670182D19A2902E000F5450 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F670183019A2902E000F5450 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +364,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F670181B19A2902E000F5450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F670182819A2902E000F5450 /* AppDelegate.swift in Sources */,
+				F670182619A2902E000F5450 /* ViewController.swift in Sources */,
+				F670182419A2902E000F5450 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F670182E19A2902E000F5450 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F670183919A2902E000F5450 /* Mickey_for_MacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -233,6 +390,11 @@
 			target = F67017F619A29003000F5450 /* Mickey */;
 			targetProxy = F670180C19A29003000F5450 /* PBXContainerItemProxy */;
 		};
+		F670183419A2902E000F5450 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F670181E19A2902E000F5450 /* Mickey for Mac */;
+			targetProxy = F670183319A2902E000F5450 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -240,6 +402,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				F670180319A29003000F5450 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F670182B19A2902E000F5450 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F670182C19A2902E000F5450 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -382,6 +552,80 @@
 			};
 			name = Release;
 		};
+		F670183B19A2902E000F5450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mickey for Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F670183C19A2902E000F5450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = "Mickey for Mac/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F670183E19A2902E000F5450 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mickey for MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mickey for Mac.app/Contents/MacOS/Mickey for Mac";
+			};
+			name = Debug;
+		};
+		F670183F19A2902E000F5450 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Mickey for MacTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mickey for Mac.app/Contents/MacOS/Mickey for Mac";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -407,6 +651,22 @@
 			buildConfigurations = (
 				F670181919A29003000F5450 /* Debug */,
 				F670181A19A29003000F5450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F670183A19A2902E000F5450 /* Build configuration list for PBXNativeTarget "Mickey for Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F670183B19A2902E000F5450 /* Debug */,
+				F670183C19A2902E000F5450 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F670183D19A2902E000F5450 /* Build configuration list for PBXNativeTarget "Mickey for MacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F670183E19A2902E000F5450 /* Debug */,
+				F670183F19A2902E000F5450 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
