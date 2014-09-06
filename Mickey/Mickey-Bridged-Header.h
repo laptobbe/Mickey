@@ -1,11 +1,10 @@
 //
-//  main.swift
-//  Mickey for Mac
+//  Mickey-Bridged-Header.h
+//  Mickey
 //
 //  Created by Tobias Sundstrand on 2014-08-19.
 //  Copyright (c) 2014 Computertalk Sweden. All rights reserved.
 //
 
-import Cocoa
-
-NSApplicationMain(C_ARGC, C_ARGV)
+#import <TSAudioPlayer/TSAudioPlayer.h>
+#import <TSAudioPlayer/TSAudioStreamer.h>

@@ -2,7 +2,7 @@
 //  Mickey_for_MacTests.swift
 //  Mickey for MacTests
 //
-//  Created by Tobias Sundstrand on 2014-08-18.
+//  Created by Tobias Sundstrand on 2014-08-19.
 //  Copyright (c) 2014 Computertalk Sweden. All rights reserved.
 //
 

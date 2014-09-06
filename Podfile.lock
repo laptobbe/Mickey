@@ -1,0 +1,14 @@
+PODS:
+  - TSAudioPlayer (0.0.1)
+
+DEPENDENCIES:
+  - TSAudioPlayer (from `~/Documents/Developer/AppleDeveloper/TSAudioPlayer`)
+
+EXTERNAL SOURCES:
+  TSAudioPlayer:
+    :path: ~/Documents/Developer/AppleDeveloper/TSAudioPlayer
+
+SPEC CHECKSUMS:
+  TSAudioPlayer: f8a424d57479ac41c5f07a10762738af9e8614ec
+
+COCOAPODS: 0.33.1
