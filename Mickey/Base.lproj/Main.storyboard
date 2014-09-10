@@ -2,12 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A329f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SaI-xA-0KE">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Constraints with attributes relative to the layout margin" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Player View Controller-->
         <scene sceneID="3j8-53-hie">
             <objects>
-                <viewController id="SaI-xA-0KE" sceneMemberID="viewController">
+                <viewController id="SaI-xA-0KE" customClass="PlayerViewController" customModule="Mickey" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uX6-xW-Xs4"/>
                         <viewControllerLayoutGuide type="bottom" id="Kgw-wr-2YJ"/>
@@ -16,18 +17,97 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQt-De-Xd2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQt-De-Xd2">
                                 <rect key="frame" x="277" y="550" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rgZ-dm-muj"/>
+                                    <constraint firstAttribute="width" constant="46" id="xV1-lB-d2I"/>
+                                </constraints>
+                                <state key="normal" title="Play">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="SaI-xA-0KE" eventType="touchUpInside" id="3VQ-XZ-Sal"/>
+                                </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RbB-Tz-zC2">
-                                <rect key="frame" x="225" y="534" width="150" height="2"/>
-                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EE6-EM-SP2">
+                                <rect key="frame" x="180" y="550" width="59" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="Qeo-Ua-0ts"/>
+                                </constraints>
+                                <state key="normal" title="Previous">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousButtonPressed:" destination="SaI-xA-0KE" eventType="touchUpInside" id="WwS-6q-rbn"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yem-HG-Zae">
+                                <rect key="frame" x="14" y="512" width="572" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHG-L8-ee4">
+                                <rect key="frame" x="357" y="550" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="fdt-ST-A9D"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="SaI-xA-0KE" eventType="touchUpInside" id="gtf-4s-8ZI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUL-S5-HaT">
+                                <rect key="frame" x="16" y="483" width="174" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="6Jr-Eg-Vt5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ei1-wl-p7x">
+                                <rect key="frame" x="389" y="483" width="195" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="6bq-uZ-cwH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tHG-L8-ee4" firstAttribute="centerY" secondItem="XQt-De-Xd2" secondAttribute="centerY" id="5nF-bf-Y3y"/>
+                            <constraint firstItem="Kgw-wr-2YJ" firstAttribute="top" secondItem="XQt-De-Xd2" secondAttribute="bottom" constant="20" id="63C-ze-vbZ"/>
+                            <constraint firstItem="XQt-De-Xd2" firstAttribute="leading" secondItem="EE6-EM-SP2" secondAttribute="trailing" constant="38" id="9Mn-O5-ePs"/>
+                            <constraint firstItem="EE6-EM-SP2" firstAttribute="centerY" secondItem="XQt-De-Xd2" secondAttribute="centerY" id="Jr5-dU-vRa"/>
+                            <constraint firstItem="bUL-S5-HaT" firstAttribute="leading" secondItem="nDs-j2-AZc" secondAttribute="leadingMargin" id="Kdp-GP-RrU"/>
+                            <constraint firstItem="Kgw-wr-2YJ" firstAttribute="top" secondItem="Ei1-wl-p7x" secondAttribute="bottom" constant="96.5" id="Kya-iG-WCg"/>
+                            <constraint firstItem="tHG-L8-ee4" firstAttribute="leading" secondItem="XQt-De-Xd2" secondAttribute="trailing" constant="34" id="VrO-Px-1br"/>
+                            <constraint firstItem="yem-HG-Zae" firstAttribute="leading" secondItem="nDs-j2-AZc" secondAttribute="leadingMargin" constant="46" id="dTg-Zn-sR8"/>
+                            <constraint firstItem="Kgw-wr-2YJ" firstAttribute="top" secondItem="yem-HG-Zae" secondAttribute="bottom" constant="58" id="e0Q-nt-AnR"/>
+                            <constraint firstAttribute="centerY" secondItem="XQt-De-Xd2" secondAttribute="centerY" id="eXm-ew-kpX"/>
+                            <constraint firstItem="Kgw-wr-2YJ" firstAttribute="top" secondItem="bUL-S5-HaT" secondAttribute="bottom" constant="96.5" id="eoX-mH-La9"/>
+                            <constraint firstItem="yem-HG-Zae" firstAttribute="leading" secondItem="nDs-j2-AZc" secondAttribute="leadingMargin" id="fCS-3b-wy0"/>
+                            <constraint firstItem="Ei1-wl-p7x" firstAttribute="trailing" secondItem="nDs-j2-AZc" secondAttribute="trailingMargin" id="lQH-Pe-IEm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yem-HG-Zae" secondAttribute="trailing" constant="46" id="uAd-3J-hX2"/>
+                            <constraint firstAttribute="centerX" secondItem="XQt-De-Xd2" secondAttribute="centerX" id="wTZ-aP-mXl"/>
+                            <constraint firstItem="yem-HG-Zae" firstAttribute="trailing" secondItem="nDs-j2-AZc" secondAttribute="trailingMargin" id="woF-lP-f42"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dTg-Zn-sR8"/>
+                                <exclude reference="uAd-3J-hX2"/>
+                                <exclude reference="eXm-ew-kpX"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="currentTimeLabel" destination="bUL-S5-HaT" id="K8t-TU-x84"/>
+                        <outlet property="progressView" destination="yem-HG-Zae" id="g0b-ki-L58"/>
+                        <outlet property="totalTimeLabel" destination="Ei1-wl-p7x" id="NL3-BL-BYh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhi-XR-Kuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

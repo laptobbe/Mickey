@@ -18,6 +18,7 @@
 		F670180419A29003000F5450 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F670180219A29003000F5450 /* Main.storyboard */; };
 		F670180619A29003000F5450 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F670180519A29003000F5450 /* Images.xcassets */; };
 		F670181219A29003000F5450 /* MickeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F670181119A29003000F5450 /* MickeyTests.swift */; };
+		F68A537E19BB86E10066EE68 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68A537D19BB86E10066EE68 /* PlayerViewController.swift */; };
 		FC64294BC52A4E0ABC921304 /* libPods-Mickey.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8837D7C3403B42328B15DC7C /* libPods-Mickey.a */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		F670180B19A29003000F5450 /* MickeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MickeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F670181019A29003000F5450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F670181119A29003000F5450 /* MickeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MickeyTests.swift; sourceTree = "<group>"; };
+		F68A537D19BB86E10066EE68 /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		F6C0C8D619A3299D0020B199 /* Mickey-Bridged-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mickey-Bridged-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				F67017FC19A29003000F5450 /* AppDelegate.swift */,
+				F68A537D19BB86E10066EE68 /* PlayerViewController.swift */,
 				F670180219A29003000F5450 /* Main.storyboard */,
 				F670180519A29003000F5450 /* Images.xcassets */,
 				F67017FA19A29003000F5450 /* Supporting Files */,
@@ -452,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F67017FD19A29003000F5450 /* AppDelegate.swift in Sources */,
+				F68A537E19BB86E10066EE68 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

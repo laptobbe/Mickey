@@ -12,11 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
-    var audioPlayer = TSAudioStreamer(URL: NSURL(string: "http://podcasts.thoughtbot.com/buildphase/51.mp3"))
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         
-        self.audioPlayer.prime()
+
         
         return true
     }

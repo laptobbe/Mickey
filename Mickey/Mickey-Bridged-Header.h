@@ -8,3 +8,4 @@
 
 #import <TSAudioPlayer/TSAudioPlayer.h>
 #import <TSAudioPlayer/TSAudioStreamer.h>
+#import <TSAudioPlayer/TSTimeFormatter.h>
